@@ -2,13 +2,13 @@ import React from 'react'
 import { AppProps } from 'next/app'
 import GlobelStyle from '../styles/global'
 import { ThemeProvider } from 'styled-components'
-import themeDark from '../styles/theme'
+import theme from '../styles/theme'
 
 const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
   return (
-    <ThemeProvider theme={themeDark}>
+    <ThemeProvider theme={theme}>
       <Component {...pageProps} />
-      <GlobelStyle />
+      <GlobelStyle></GlobelStyle>
     </ThemeProvider>
   )
 }
